@@ -26,13 +26,7 @@ const sales = [
     { product: "oranges", price: 1.00, quantity: 10, date: "2024-10-13" },
 ]
 
-const sentences = autostat(sales)
-
-for (const sentence of sentences) {
-    console.log(sentence)
-}
-
-// Output:
+console.log(autoStat(sales));
 
 
 ## Expected Output Sizes

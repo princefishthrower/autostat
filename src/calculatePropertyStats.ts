@@ -1,5 +1,5 @@
-import { IProbabilityMetric } from "../../../interfaces/IProbabilityMetric";
-import { IPropertyStats } from "../../../interfaces/IPropertyStats";
+import { IProbabilityMetric } from "./interfaces/IProbabilityMetric";
+import { IPropertyStats } from "./interfaces/IPropertyStats";
 
 export const calculatePropertyStats = <T>(
   objects: T[],

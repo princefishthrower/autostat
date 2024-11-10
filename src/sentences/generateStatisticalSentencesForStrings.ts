@@ -51,8 +51,6 @@ export const generateStatisticalSentencesForStrings = <T>(
   return sentences;
 };
 
-
-
 const calculateStringStatistics = (
   strings: string[],
   stringEnum: string[]

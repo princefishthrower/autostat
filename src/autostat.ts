@@ -4,7 +4,7 @@ import { generateProbabilitySentences } from "./sentences/generateProbabilitySen
 import { generateStatisticalSentencesForNumbers } from "./sentences/generateStatisticalSentencesForNumbers"
 import { generateStatisticalSentencesForStrings } from "./sentences/generateStatisticalSentencesForStrings"
 
-export const autoStat= <T extends object>(
+export const autoStat = <T extends object>(
     objects: T[],
     metrics?: IProbabilityMetric<T>[],
     objectsNamePlural?: string,
@@ -30,7 +30,7 @@ export const autoStat= <T extends object>(
     ]
 }
 
-export const  buildProbabilityMetricsFromObjects = <T extends object>(objects: T[]): IProbabilityMetric<T>[] => {
+export const buildProbabilityMetricsFromObjects = <T extends object>(objects: T[]): IProbabilityMetric<T>[] => {
     const keys = Object.keys(objects[0]) as Array<keyof T>
     return keys.map(key => {
         return {
